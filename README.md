@@ -4,6 +4,18 @@ A simulated SOC investigation of an internal portal. The alert describes repeate
 
 **Skills demonstrated** — Packet triage, TCP stream reconstruction, HTTP analysis, evidence hashing, timeline building, and escalation writing.
 
+## Case file
+
+| Deliverable | What it covers |
+| --- | --- |
+| [Case intake and triage gates](docs/case-intake.md) | Scope, priority, escalation criteria, and analyst handoff |
+| [Evidence register](evidence/register.md) | Artifact provenance, SHA-256 checks, and handling |
+| [Reference incident report](docs/incident-report.md) | Packet-level timeline, findings, and open questions |
+| [Detection design](detections/login-sequence.md) | Proposed correlation rule, telemetry requirements, and test cases |
+| [Analyst worksheet](docs/analyst-worksheet.md) | Evidence and findings to collect during your own VM replay |
+
+**Case WS-001** is a controlled SOC exercise. The example report uses the synthetic reference capture. The worksheet is for observations from your own replay.
+
 ## Start here
 
 1. Open [reference.pcap](captures/reference.pcap) in Wireshark with **File → Open**. This is a deterministic, synthetic capture using documentation IPs and fake credentials.
