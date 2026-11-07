@@ -47,3 +47,25 @@ The sequence warrants investigation as a possible account compromise. The captur
 From the repo root, verify the bundle with `sha256sum -c evidence/SHA256SUMS`. Regenerate the fixture with `python3 scripts/lab.py reference`.
 
 The project adapts the source lab’s display filters, stream reconstruction, HTTP object export, and hashing into an original simulated investigation. [Wireshark User’s Guide — Following Protocol Streams](https://www.wireshark.org/docs/wsug_html_chunked/ChAdvFollowStreamSection.html)
+
+---
+
+## Disclaimer
+
+This project is a controlled simulation for cybersecurity training and portfolio demonstration. The reference capture uses documentation IP addresses and fictitious credentials. The Ubuntu replay runs on the VM’s loopback interface and serves a ZIP containing a lab-generated text file. All evidence in the reference case was generated for this exercise.
+
+## Author
+
+**[Anik Nohan](https://github.com/aniknohan)**
+
+This lab was built to practice and demonstrate:
+
+- Network alert triage and incident scoping
+- Wireshark display filtering and TCP stream reconstruction
+- HTTP authentication and file transfer analysis
+- Evidence recovery and integrity verification with SHA-256
+- Packet-level timeline reconstruction and escalation to Tier 2
+
+### Tools Used
+
+`Wireshark` · `tcpdump` · `Ubuntu` · `Python 3` · `sha256sum` · `unzip`
