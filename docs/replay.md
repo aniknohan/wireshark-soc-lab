@@ -58,5 +58,3 @@ git push -u origin main
 ```
 
 Run `git add screenshots` once your screenshot directory exists. Review `git status` and publish only lab-generated evidence. The included ignore rule keeps the replay capture local by default. To include a reviewed replay capture, run `git add -f captures/replay.pcap` before committing.
-
-**Resume bullet after completing your replay** — Reproduced and investigated a simulated HTTP login anomaly in Ubuntu using Wireshark, reconstructed seven TCP conversations, verified a transferred archive with SHA-256, and documented the evidence and escalation criteria.
